@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cadastrar-se</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/User/user.css">
+</head>
+
+<body>
+    <div class="card card-register">
+        <div class="card-body">
+            <h3 class="card-title">Registrar-se!</h3><hr>
+            <h5 class="card-subtitle mb-2 text-muted">Preencha seus dados</h5>
+            <form action="/registerUser" method="post" autocomplete="on">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="nome" name="name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Seu melhor E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Celular/Telefone</label>
+                            <input type="text" class="form-control" id="telefone" name="tel" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="senha" class="form-label">Escolha uma senha</label>
+                            <input type="password" class="form-control" id="senha" name="senha" required autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="repSenha" class="form-label">Repita a senha</label>
+                            <input type="password" class="form-control" id="repSenha" name="repSenha" required autocomplete="off"> 
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <div class="message"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="cep" class="form-label">CEP</label>
+                            <input type="number" class="form-control" id="cep" name="cep" required autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="mb-3">
+                            <label for="numero" class="form-label">Número</label>
+                            <input type="text" class="form-control" id="numero" name="number" required autocomplete="off">
+                        </div>
+                    </div>   
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="logradouro" class="form-label">Logradouro</label>
+                            <input type="text" class="form-control" id="logradouro" name="logradouro" readonly required>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="mb-3">
+                            <label for="bairro" class="form-label">Bairro</label>
+                            <input type="text" class="form-control" id="bairro" name="bairro" readonly required>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="mb-3">
+                            <label for="cidade" class="form-label">Cidade</label>
+                            <input type="text" class="form-control" id="cidade" name="cidade" readonly required>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="mb-3">
+                            <label for="uf" class="form-label">UF</label>
+                            <input type="text" class="form-control" id="uf" name="uf" readonly required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary">Cadastrar-se</button>
+                            <a href="/" type="submit" class="btn btn-danger">Tela Inicial</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/User/user.js"></script>
+    <script src="/js/message/toast.js"></script>
+</body>
+
+</html>

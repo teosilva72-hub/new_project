@@ -1,0 +1,16 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: black;
+}
+
+.card-register{
+    position: relative;
+    width: 70%;
+    left: 15%;
+    top: 10%
+}
