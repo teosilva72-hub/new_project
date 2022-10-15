@@ -7,3 +7,12 @@ html, body{
 body{
     background: white;
 }
+
+main{
+  position: relative;
+  top: 10%;
+}
+
+.card-config{
+  height: 200px;
+}

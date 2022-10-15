@@ -5,16 +5,23 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Usuário</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/User/indexUser.css">
 </head>
 <body>
-    <%- include('../Template/NavBar/NavBar.ejs')%>
+    <nav>
+        <%- include('../Template/NavBar/NavBar.ejs')%>
+    </nav>
     
+   <main class="container">    
+        <%- include('../Widget/dashbord.ejs')%>
+   </main>
+
     <script src="/jquery/dist/jquery.min.js"></script>
     <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/Widget/Template/class.js"></script>
+    <script src="/js/Widget/Template/main.js"></script>
     <script src="/js/User/chat.js"></script>
     <script src="/js/message/toast.js"></script>
 </body>
