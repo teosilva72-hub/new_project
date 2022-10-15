@@ -4,7 +4,6 @@ const Controller = require('./ControllerIndex');
 
 app.get('/', async(req, res)=>{
     try{
-        res.status(200);
         res.cookie('auth', '')
         return await res.render('../View/Page/Index/Index');
     }catch(error){

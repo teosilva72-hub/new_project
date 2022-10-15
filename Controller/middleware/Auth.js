@@ -23,10 +23,7 @@ module.exports = {
             req.token = token;
             next()
         } catch (err) {
-            return res.status(400).json({
-                erro: true,
-                mensagem: 'Token Invalido'
-            })
+            return res.redirect('/');
         }
 
     }
