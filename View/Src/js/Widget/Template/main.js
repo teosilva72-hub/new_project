@@ -1,13 +1,31 @@
-const dashboard = () => {
+const dashboard = (Filds) => {
     const widget = new Dashboard(); 
-    const date = $('#date');
-    const perfil = $('#perfil');
-    const exchange = $('#exchange');
-    const message = $('#message');
-    date.append(widget.Cards('Data')) ;
-    perfil.append(widget.Cards('Perfil'));
-    exchange.append(widget.Cards('Internacional'));
-    message.append(widget.Cards('Notificação'));  
+    time(widget);
+    perfil(widget);
+    exchange(widget);
+    notification(widget);
 }
-dashboard();
 
+const Hour = () => {return moment(new Date()).format('DD-MM-YYYY hh:mm:ss')}
+
+const time = (data) => {
+    const date = $('#date');
+    date.append(data.Cards('Data', Hour(), 'success'));
+    setInterval(()=>{
+        $('.content-Data').text(Hour());
+    },100);
+}
+const perfil = (data) => {
+    const perfil = $('#perfil');
+    perfil.append(data.Cards('Perfil', $('#user').val(), 'info'));
+}
+const exchange = (data) => {
+    const exchange = $('#balance');
+    exchange.append(data.Cards('Saldo',''));
+}
+const notification = (data) => {
+    const message = $('#notification');
+    message.append(data.Cards('Notificação',''));
+}
+
+dashboard('');

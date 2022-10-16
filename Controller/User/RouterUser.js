@@ -5,9 +5,9 @@ const Controller = require('./ControllerUser');
 
 app.get('/user', eAdmin, async (req, res)=>{
     try{
-        console.log(req.nameUser)
+        console.log(req.nameUser);
         res.status(200);
-        return res.render('../View/Page/user/user');
+        return res.render('../View/Page/user/user',{user: req.nameUser});
     }catch(error){
         res.status(500);
         return res.render('../View/Page/user/user');

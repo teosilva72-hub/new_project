@@ -17,9 +17,10 @@
    <main class="container">    
         <%- include('../Widget/dashbord.ejs')%>
    </main>
-
+   <input type="hidden" id="user" value="<%=user %>">
     <script src="/jquery/dist/jquery.min.js"></script>
     <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/Global/moment.js"></script>
     <script src="/js/Widget/Template/class.js"></script>
     <script src="/js/Widget/Template/main.js"></script>
     <script src="/js/User/chat.js"></script>
