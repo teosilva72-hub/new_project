@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/Login/login.css">
+</head>
+
+<body>
+    <div class="card card-login">
+        <div class="card-body">
+          <h5 class="card-title">Conectar-se!</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Rede Social</h6>
+          <form method="post" id="formIndex" action="/login">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" required autocomplete="on">
+            </div>
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha" name="senha" required>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Acessar</button>
+                <a href="/register" class="btn btn-success">Registrar-se</a>
+            </div>
+           
+        </form>
+        </div>
+      </div>
+    
+
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/index/index.js"></script>
+</body>
+
+</html>

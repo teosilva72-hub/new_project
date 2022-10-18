@@ -1,18 +1,29 @@
-html, body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-body{
-    background: white;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
-main{
+body {
+  
+}
+
+main {
   position: relative;
   top: 10%;
 }
 
-.card-config{
+.card-conf {
   height: 200px;
+}
+
+.card-efeito:hover{
+  color: #0888c4;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
 }
