@@ -1,0 +1,43 @@
+#rigth-navbar{
+    width: 100px;
+    height: 100%;
+    z-index: 100;
+    position: fixed;
+}
+#show-navbar {
+    position: fixed;
+    top: 40%;
+    z-index: 100;
+    background-color: black;
+    color: white;
+}
+.bi-arrow-bar-right{
+    font-size: 25px;
+    z-index: 900;
+}
+.bi-arrow-bar-left{
+    font-size: 25px;
+    position: fixed;
+    left: 80px;
+    top: 40%;
+    color: white;
+    z-index: 900;
+}
+.list-navbar {
+    position: relative;
+    top: 0%;
+}
+.item-navbar{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 10px;
+}
+.navbar-item{
+    width: 50px !important;
+}
+@media screen and (min-width: 1100px){
+    #rigth-navbar{
+        width: 100px;
+    }
+}

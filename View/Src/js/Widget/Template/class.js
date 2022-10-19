@@ -20,28 +20,22 @@ class Dashboard {
                             <th scope="col">#</th>
                             <th scope="col">2º Feira</th>
                             <th scope="col">3º Feira</th>
-                            <th scope="col">4ª Feira</th>
-                            
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                           
+                            <td>Otto</td>                           
                         </tr>
                         <tr>
                             <th scope="row">2</th>
                             <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            
+                            <td>Teste</td>                            
                         </tr>
                         <tr>
                             <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
+                            <td>Larry</td>
                             <td>@twitter</td>
                         </tr>
                     </tbody>
