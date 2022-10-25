@@ -1,45 +1,40 @@
-const dashboard = (Filds) => {
-    const widget = new Dashboard(); 
-    time(widget);
-    perfil(widget);
-    exchange(widget, '50%');
-    notification(widget);
-    tarefas(widget);
+const dashboard = (data) => {
+    const widget = new Dashboard();
+    enterprise(widget);
+    Options(widget);
 }
 
-const Hour = () => {return moment(new Date()).format('DD-MM-YY HH:mm:ss')}
-
-const time = (data) => {
-    const date = $('#date');
-    const title = 'Taferas';
-    date.append(data.Cards(title, ''));
-    setInterval(()=>{
-        const hour = `Data: ${Hour()}`
-        $(`.content-${title}`).text(hour);
-    },100);
+const enterprise = (data) => {
+    try {
+        let obj = `${User()}, ${Enterprise()}`;
+        const enterprise = $('#enterprise');
+        setInterval(()=>{
+            let hour = Hour();
+            $('.elementOne-enterprise').text(`Agora: ${hour}`)
+        },100);
+        let card = data.Cards($(enterprise).attr('id'), obj);
+        enterprise.append(card)
+    }catch(error){
+        console.log(error)
+    }
 }
-const perfil = (data) => {
-    const perfil = $('#perfil');
-    const user = `Usuário: ${$('#user').val()}`
-    perfil.append(data.Cards('Perfil', user));
+const User = () => {
+    return $('#user').val();
 }
-const exchange = (data, value) => {
-    let process = `<div class="progress"><div class="progress-bar bg-success" role="progressbar" style="width: ${value}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div>`;
-    const exchange = $('#balance');
-    exchange.append(data.Cards('Saldo', process));
+const Enterprise = () => {
+    return $('#enterpriseName').val();
 }
-const notification = (data) => {
-    const message = $('#notification');
-    message.append(data.Cards('Alerta',''));
-}
-const tarefas = (data) => {
-    const task = $('#tarefas');
-    const calendar = $('#calendar');
-    task.append(data.Table('tarefas'));
-    calendar.append(data.Table('calendar'));
-    $('#calendar');
-    $(`.tarefas`).DataTable();
-    $(`.calendar`).DataTable();
+const Hour = () =>{
+    return moment(new Date()).format('DD/MM/YYYY HH:mm:ss');
 }
 
-dashboard('');
+const Options = (data) => {
+    let title = 'Clientes';
+    let html = ``;
+    
+    const option = $('#client');
+    let card = data.Cards(option.attr('id'), title);
+    option.append(card);
+    $('.elementOne-options').append(html)
+}
+dashboard(true);

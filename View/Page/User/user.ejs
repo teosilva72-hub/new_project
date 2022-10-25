@@ -17,27 +17,23 @@
     <nav>
         <%- include('../Template/NavBar/NavBar.ejs')%>
     </nav>
-
-    <main class="">        
-        <div class="row">
-            <div id="navbarRigth" class="col-3 col-lg-1 col-md-1 col-sm-1">
-                <%- include('../Template/NavBar/navbarRigth.ejs')%>
-            </div>
-            <div id="dashbordOne" class="col-9 col-lg-11 col-md-11 col-sm-11">
-                <div class="container">
-                    <%- include('../Widget/dashbord.ejs')%>
-                </div>
-            </div>
+    <article>
+        <%- include('../User/modalEnterprise.ejs')%>
+    </article>
+    <main>        
+        <div class="container-md">
+            <%- include('../Widget/dashbord.ejs')%>
         </div>
     </main>
     <input type="hidden" id="user" value="<%=user %>">
+    <input type="hidden" id="enterpriseName" value="<%=enterprise %>">
     <script src="/jquery/dist/jquery.min.js"></script>
     <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/Global/dataTables.min.js"></script>
     <script src="/js/Global/moment.js"></script>
     <script src="/js/Widget/Template/class.js"></script>
     <script src="/js/Widget/Template/main.js"></script>
-    <script src="/js/User/chat.js"></script>
+    <script src="/js/User/main.js"></script>
     <script src="/js/message/toast.js"></script>
     <script src="/js/Global/navbar.js"></script>
 </body>

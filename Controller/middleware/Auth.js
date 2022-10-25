@@ -20,6 +20,8 @@ module.exports = {
             req.nameUser = decode.name;
             req.emailUser = decode.email;
             req.userTel = decode.tel;
+            req.enterpriseId = decode.enterpriseId;
+            req.enterpriseName = decode.enterpriseName
             req.token = token;
             next()
         } catch (err) {

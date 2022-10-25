@@ -1,10 +1,10 @@
 class Dashboard {
-    Cards(title, content){
+    Cards(id, title){
         let card = `
-            <div class="card card-conf card-${title} mb-3 card-efeito shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="card card-conf card-${id} mb-3 card-efeito shadow-lg p-3 mb-5 bg-body rounded">
                 <div class="card-body">
-                    <h5 class="card-title ${title}">${title}</h5><hr>
-                    <div class="content-${title}">${content}</div>
+                    <h5 class="card-title title-${id}">${title}</h5><hr>
+                    <div class="elementOne-${id}"></div>
                 </div>
             </div>
         `;

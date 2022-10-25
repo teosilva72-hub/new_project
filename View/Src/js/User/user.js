@@ -1,9 +1,3 @@
-$(() => {
-    $('#cep').on('change', () => {
-        viaCep($('#cep').val());
-    });
-});
-
 function viaCep(cep) {
     $('.errorViaCep').remove();
     try{
@@ -46,3 +40,9 @@ function FildsCep(data) {
         return false;
    }
 }
+
+$(() => {
+    $('#cep').on('change', () => {
+        viaCep($('#cep').val());
+    });
+});

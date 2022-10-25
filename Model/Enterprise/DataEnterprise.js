@@ -1,23 +1,41 @@
 const sequelize = require('sequelize')
 const { Sequelize } = require('../../Setting/SQL/MySQL/mysql')
 const Conn = require('../../Setting/SQL/MySQL/mysql')
-const User = Conn.conn.define('user', {
+const Enterprise = Conn.conn.define('enterprise', {
         id: {
             type: Sequelize.INTEGER,
             autoIncrement: true,
             allowNull: false,
             primaryKey: true
         },
-        id_enterprise: {
-            type: Sequelize.INTEGER
-        },
         name: {
             type: Sequelize.STRING
         },
-        email: {
+        fantasy: {
             type: Sequelize.STRING
         },
-        senha: {
+        cnpj: {
+            type: Sequelize.STRING
+        },
+        insc_est:{
+            type: Sequelize.STRING
+        },
+        cod_atv: {
+            type: Sequelize.STRING
+        },
+        cod_nature: {
+            type: Sequelize.STRING
+        },
+        contact: {
+            type: Sequelize.STRING
+        },
+        tel: {
+            type: Sequelize.STRING
+        },
+        celular: {
+            type: sequelize.STRING
+        },
+        email: {
             type: Sequelize.STRING
         },
         cep: {
@@ -38,9 +56,6 @@ const User = Conn.conn.define('user', {
         number: {
             type: Sequelize.STRING
         },
-        tel: {
-            type: sequelize.STRING
-        },
         nivelAccess: {
             type: Sequelize.INTEGER
         },
@@ -52,5 +67,5 @@ const User = Conn.conn.define('user', {
         }
     }, { freezeTableName: true, timestamps: false}
 );
-//User.sync({ force: true })
-module.exports = User
+//Enterprise.sync({ force: true })
+module.exports = Enterprise
